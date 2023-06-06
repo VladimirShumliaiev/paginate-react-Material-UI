@@ -10,7 +10,7 @@ function App() {
     const [posts, setPosts] = useState([])
     const [page, setPage] = useState(1)
     const [pageQty, setPageQty] = useState(0)
-    const [query, setQuery] = useState('')
+    const [query, setQuery] = useState('react')
 
     useEffect(() => {
         axios.get(BASE_URL + `query=${query}&page=${page - 1}`)
